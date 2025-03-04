@@ -25,3 +25,9 @@ var person = {
 // person.name = 20; // Error
 // person.age = 20; // OK
 // person.age = 'John'; // Error
+// Explicitly Defined Variables
+var str;
+var ag;
+var isStudent;
+var skills;
+var student;

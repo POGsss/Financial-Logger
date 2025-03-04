@@ -28,3 +28,10 @@ inputs.forEach(input => {
     // person.name = 20; // Error
     // person.age = 20; // OK
     // person.age = 'John'; // Error
+
+// Explicitly Defined Variables
+let str: string;
+let ag: number;
+let isStudent: boolean;
+let skills: string[];
+let student: { name: string, age: number, isStudent: boolean, skills: string[] };
