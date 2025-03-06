@@ -8,40 +8,40 @@ inputs.forEach(input => {
 });
 
 // Typescript Array
-    let names = ['John', 'Doe', 'Jane'];
-    // names.push(20); // Error
-    // names.push('Frankie'); // OK
-    let numbers = [1, 2, 3, 4, 5];
-    // numbers.push(20); // OK
-    // numbers.push('Frankie'); // Error
-    let mixed = ['John', 20, 'Doe', 30];
-    // mixed.push(20); // OK
-    // mixed.push('Frankie'); // OK
+    let arrayStr = ['John', 'Doe', 'Jane'];
+    // arrayStr.push(20); // Error
+    // arrayStr.push('Frankie'); // OK
+    let arrayNum = [1, 2, 3, 4, 5];
+    // arrayNum.push(20); // OK
+    // arrayNum.push('Frankie'); // Error
+    let arrayMix = ['John', 20, 'Doe', 30];
+    // arrayMix.push(20); // OK
+    // arrayMix.push('Frankie'); // OK
 
 // Typescript Object
-    let person = {
+    let objectPerson = {
         name: 'Frankie',
         age: 20,
         skills: ["Coding", "Designing", "Editing"]
     };
-    // person.name = 'John'; // OK
-    // person.name = 20; // Error
-    // person.age = 20; // OK
-    // person.age = 'John'; // Error
+    // objectPerson.name = 'John'; // OK
+    // objectPerson.name = 20; // Error
+    // objectPerson.age = 20; // OK
+    // objectPerson.age = 'John'; // Error
 
 // Explicitly Defined Variables
-let str: string; // String Variable
-let ag: number; // Number Variable
-let isStudent: boolean; // Boolean Variable
-let skills: string[]; // Array of Strings
-let student: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object
+let variableStr: string; // String Variable
+let variableNum: number; // Number Variable
+let variableBool: boolean; // Boolean Variable
+let arrayStr1: string[]; // Array of Strings
+let objectPerson1: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object
 
 // Explicitly Defined Array
-let namesA: string[]; // Array of Strings
-let numbersA: number[]; // Array of Numbers
-let mixedA: (string | number)[]; // Array of Strings and Numbers
+let arrayStr2: string[]; // Array of Strings
+let arrayNum1: number[]; // Array of Numbers
+let arrayMix1: (string | number)[]; // Array of Strings and Numbers
 
 // Explicitly Defined Object
-let object : object; // Object
-let objectO : {}; // Object
-let objectOb: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object
+let objec1 : object; // Object Type Defined
+let object2 : {}; // Object Type Defined
+let object3: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object Strucure Defined
