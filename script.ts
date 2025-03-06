@@ -30,8 +30,18 @@ inputs.forEach(input => {
     // person.age = 'John'; // Error
 
 // Explicitly Defined Variables
-let str: string;
-let ag: number;
-let isStudent: boolean;
-let skills: string[];
-let student: { name: string, age: number, isStudent: boolean, skills: string[] };
+let str: string; // String Variable
+let ag: number; // Number Variable
+let isStudent: boolean; // Boolean Variable
+let skills: string[]; // Array of Strings
+let student: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object
+
+// Explicitly Defined Array
+let namesA: string[]; // Array of Strings
+let numbersA: number[]; // Array of Numbers
+let mixedA: (string | number)[]; // Array of Strings and Numbers
+
+// Explicitly Defined Object
+let object : object; // Object
+let objectO : {}; // Object
+let objectOb: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object

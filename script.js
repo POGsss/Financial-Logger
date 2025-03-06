@@ -26,8 +26,16 @@ var person = {
 // person.age = 20; // OK
 // person.age = 'John'; // Error
 // Explicitly Defined Variables
-var str;
-var ag;
-var isStudent;
-var skills;
-var student;
+var str; // String Variable
+var ag; // Number Variable
+var isStudent; // Boolean Variable
+var skills; // Array of Strings
+var student; // Object
+// Explicitly Defined Array
+var namesA; // Array of Strings
+var numbersA; // Array of Numbers
+var mixedA; // Array of Strings and Numbers
+// Explicitly Defined Object
+var object; // Object
+var objectO; // Object
+var objectOb; // Object
