@@ -45,3 +45,8 @@ let arrayMix1: (string | number)[]; // Array of Strings and Numbers
 let objec1 : object; // Object Type Defined
 let object2 : {}; // Object Type Defined
 let object3: { name: string, age: number, isStudent: boolean, skills: string[] }; // Object Strucure Defined
+
+// Dynamic Type In Typescript
+let dynamicVariable: any; // Dynamic Variable
+let dynamicArray: any[]; // Dynamic Array
+let dynamicObject: { property: any }; // Dynamic Object
