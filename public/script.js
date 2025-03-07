@@ -66,3 +66,7 @@ const func4 = (name, age, skills = 'Coding') => {
 func2('John', 20); // Name: John, Age: 20
 console.log(func3('John', 20, 'Coding')); // Name: John, Age: 20, Skills: Coding
 console.log(func4('John', 20)); // Name: John, Age: 20, Skills: Coding
+const func5 = (uid, user) => {
+    console.log(`User ID: ${uid}, User: ${user}`);
+};
+func5(20, { name: 'John', age: 20, skills: ['Coding', 'Designing'] });

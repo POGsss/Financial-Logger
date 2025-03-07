@@ -76,3 +76,14 @@ const func4 = (name: string, age: number, skills: string | number = 'Coding'): s
 func2('John', 20); // Name: John, Age: 20
 console.log(func3('John', 20, 'Coding')); // Name: John, Age: 20, Skills: Coding
 console.log(func4('John', 20)); // Name: John, Age: 20, Skills: Coding
+
+// Type Aliases
+type stringOrNumber = string | number;
+type objType = { name: string, age: number, skills: string[] };
+type funcType = (name: string, age: number) => void;
+
+const func5 = (uid: stringOrNumber, user: objType): void => {
+    console.log(`User ID: ${uid}, User: ${user}`);
+}
+
+func5(20, { name: 'John', age: 20, skills: ['Coding', 'Designing'] });
