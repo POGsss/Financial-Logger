@@ -44,3 +44,25 @@ let object3; // Object Strucure Defined
 let dynamicVariable; // Dynamic Variable
 let dynamicArray; // Dynamic Array
 let dynamicObject; // Dynamic Object
+// Functions In Typescript
+const func = () => {
+    console.log('This is void function');
+};
+const func1 = () => {
+    return 'This is string function';
+};
+func(); // This is void function
+console.log(func1()); // This is string function
+// Functions With Parameters
+const func2 = (name, age) => {
+    console.log(`Name: ${name}, Age: ${age}`);
+};
+const func3 = (name, age, skills) => {
+    return `Name: ${name}, Age: ${age}, Skills: ${skills}`;
+};
+const func4 = (name, age, skills = 'Coding') => {
+    return `Name: ${name}, Age: ${age}, Skills: ${skills}`;
+};
+func2('John', 20); // Name: John, Age: 20
+console.log(func3('John', 20, 'Coding')); // Name: John, Age: 20, Skills: Coding
+console.log(func4('John', 20)); // Name: John, Age: 20, Skills: Coding

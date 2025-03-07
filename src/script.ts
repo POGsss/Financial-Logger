@@ -50,3 +50,29 @@ let object3: { name: string, age: number, isStudent: boolean, skills: string[] }
 let dynamicVariable: any; // Dynamic Variable
 let dynamicArray: any[]; // Dynamic Array
 let dynamicObject: { property: any }; // Dynamic Object
+
+// Functions In Typescript
+const func = (): void => {
+  console.log('This is void function');
+}
+const func1 = (): string => {
+    return 'This is string function';
+}
+
+func(); // This is void function
+console.log(func1()); // This is string function
+
+// Functions With Parameters
+const func2 = (name: string, age: number): void => {
+    console.log(`Name: ${name}, Age: ${age}`);
+}
+const func3 = (name: string, age: number, skills?: string | number): string => {
+    return `Name: ${name}, Age: ${age}, Skills: ${skills}`;
+}
+const func4 = (name: string, age: number, skills: string | number = 'Coding'): string => {
+    return `Name: ${name}, Age: ${age}, Skills: ${skills}`;
+}
+
+func2('John', 20); // Name: John, Age: 20
+console.log(func3('John', 20, 'Coding')); // Name: John, Age: 20, Skills: Coding
+console.log(func4('John', 20)); // Name: John, Age: 20, Skills: Coding
