@@ -70,3 +70,33 @@ const func5 = (uid, user) => {
     console.log(`User ID: ${uid}, User: ${user}`);
 };
 func5(20, { name: 'John', age: 20, skills: ['Coding', 'Designing'] });
+// Function Signature
+// Example 1
+let greet;
+greet = (name, age) => {
+    console.log(`Name: ${name}, Age: ${age}`);
+};
+greet('John', 20);
+// Example 2
+let calc;
+calc = (num1, num2, action) => {
+    switch (action) {
+        case 'add':
+            return num1 + num2;
+        case 'sub':
+            return num1 - num2;
+        case 'mul':
+            return num1 * num2;
+        case 'div':
+            return num1 / num2;
+        default:
+            return 0;
+    }
+};
+console.log(calc(10, 5, 'add')); // 15
+// Example 3
+let logDetails;
+logDetails = (uid, user) => {
+    console.log(`User ID: ${uid}, User: ${user}`);
+};
+// DOM And Type Casting

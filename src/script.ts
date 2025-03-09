@@ -87,3 +87,37 @@ const func5 = (uid: stringOrNumber, user: objType): void => {
 }
 
 func5(20, { name: 'John', age: 20, skills: ['Coding', 'Designing'] });
+
+// Function Signature
+    // Example 1
+    let greet: (name: string, age: number) => void;
+    greet = (name: string, age: number) => {
+        console.log(`Name: ${name}, Age: ${age}`);
+    }
+    greet('John', 20);
+
+    // Example 2
+    let calc: (num1: number, num2: number, action: string) => number;
+    calc = (num1: number, num2: number, action: string) => {
+        switch (action) {
+            case 'add':
+                return num1 + num2;
+            case 'sub':
+                return num1 - num2;
+            case 'mul':
+                return num1 * num2;
+            case 'div':
+                return num1 / num2;
+            default:
+                return 0;
+        }
+    }
+    console.log(calc(10, 5, 'add')); // 15
+
+    // Example 3
+    let logDetails: (uid: stringOrNumber, user: objType) => void;
+    logDetails = (uid: stringOrNumber, user: objType) => {
+        console.log(`User ID: ${uid}, User: ${user}`);
+    }
+
+// DOM And Type Casting
