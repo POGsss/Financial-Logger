@@ -12,5 +12,3 @@ form.addEventListener("submit", (e: Event) => {
 
     console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
 });
-
-// Classes

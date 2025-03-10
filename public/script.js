@@ -10,4 +10,3 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
 });
-// Classes
