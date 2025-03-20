@@ -1,0 +1,313 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #d62828;
+    --secondaryColor: #dc4848;
+    --lightColor: #fdf4f4;
+    --lightColorSecondary: #fbeaea;
+    --darkColor: #200606;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--lightColor);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Style */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primaryColor);
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.headerContainer h1 {
+    color: var(--lightColor);
+    width: 100%;
+    max-width: 125px;
+}
+
+.headerContainer .navContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.headerContainer .navContainer .searchBar {
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.headerContainer .navContainer .hamburger {
+    font-size: 30px;
+    color: var(--lightColor);
+    display: none;
+    margin-left: 20px;
+}
+
+.headerContainer .navContainer .navLinks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color: var(--lightColor);
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+.headerContainer .navContainer .navLinks.active {
+    right: 0px;
+}
+
+.headerContainer .navContainer .navLinks li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Main Style */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+section {
+    display: grid;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.section1 {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    background: var(--primaryColor);
+}
+
+.section1 .cards {
+    padding: 10px;
+    background: var(--secondaryColor);
+    color: var(--lightColorSecondary);
+    border-radius: 5px;
+    cursor: pointer;
+    scroll-snap-align: center;
+}
+
+.section1 .cards.selected {
+    background: var(--primaryColor);
+    color: var(--lightColor);
+} 
+
+.section1 .cards:hover {
+    background: var(--lightColorSecondary);
+    color: var(--darkColor);
+}
+
+.section2 {
+    width: 100%;
+    padding: 20px;
+    background: var(--lightColorSecondary);
+}
+
+.section2 .articleContainer {
+    display: none;
+}
+
+.section2 .articleContainer.show {
+    display: block;
+}
+
+.section2 .articleTitle {
+    color: var(--darkColor);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section2 .articleContent {
+    color: var(--darkColor);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.section2 .articleContent .startingLetter {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    margin: 15px 10px 5px 0px;
+    line-height: 30px;
+}
+
+.section2 .articleImg {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 10px solid var(--primaryColor);
+    background: var(--primaryColor);
+}
+
+.section2 .articleVideo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid var(--primaryColor);
+    background: var(--primaryColor);
+}
+
+.section2 .articleDate {
+    float: right;
+    color: var(--darkColor);
+    font-style: italic;
+}
+
+/* Footer Style */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primaryColor);
+    width: 100%;
+    padding: 20px;
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.footerContainer h1 {
+    font-size: 12px;
+    color: var(--lightColor);
+    font-weight: normal;
+}
+
+.footerContainer h1 a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--lightColorSecondary);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .mainContainer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .section1 {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        width: 100%;
+        max-width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerContainer .navContainer .hamburger {
+        font-size: 30px;
+        color: var(--lightColor);
+        display: block;
+        margin-left: 20px;
+    }
+
+    .headerContainer .navContainer .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 40px 20px;
+        width: 300px;
+        height: 100%;
+        background: var(--secondaryColor);
+    }
+
+    .headerContainer .navContainer .navLinks li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .section2 .articleImg {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        height: 160px;
+    }
+
+    .headerContainer {
+        margin-bottom: 50px;
+    }
+
+    .headerContainer .navContainer .searchBar {
+        position: absolute;
+        top: 90px;
+        width: calc(100% - 80px);
+        max-width: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .headerContainer .navContainer .navLinks {
+        width: 100%;
+    }
+}
