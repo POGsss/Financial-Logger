@@ -10,13 +10,12 @@
 <body>
     <header>
         <div class="headerContainer">
-            <h1 class="Title"><i class="fa fa-folder-open"></i> Logo</h1>
+            <h1 class="Title">Financial Logger</h1>
             <nav class="navContainer">
                 <i class="fa fa-bars hamburger" id="hamburger"></i>
                 <ul class="navLinks" id="navLinks">
                     <li>Home</li>
                     <li>About</li>
-                    <li>Contact</li>
                 </ul>
             </nav>
         </div>
@@ -24,7 +23,28 @@
     <main>
         <div class="mainContainer">
             <section class="section1">
-                
+                <form class="newItemForm">
+                    <div class="field">
+                        <label>Type:</label>
+                        <select id="type">
+                            <option value="invoice">Invoice</option>
+                            <option value="payment">Payment</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>To / From:</label>
+                        <input type="text" id="toFrom">
+                    </div>
+                    <div class="field">
+                        <label>Details:</label>
+                        <input type="text" id="details">
+                    </div>
+                    <div class="field">
+                        <label>Amount:</label>
+                        <input type="number" id="amount">
+                    </div>
+                    <button>Add Item</button>
+                </form>
             </section>
             <section class="section2">
                 
