@@ -1,3 +1,8 @@
+// Imports
+import { Payment } from "./classes/Payment";
+import { Invoice } from "./classes/Invoice";
+import { HasFormatter } from "./interfaces/HasFormatter";
+
 // Getting Nav Elements
 const hamburger = document.getElementById("hamburger") as HTMLElement;
 const navLinks = document.getElementById("navLinks") as HTMLElement;
