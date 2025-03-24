@@ -24,13 +24,16 @@
         <div class="mainContainer">
             <section class="section1">
                 <form class="newItemForm">
-                    <h1>Input Form</h1>
-                    <div class="field">
+                    <div class="field left">
                         <label>Type:</label>
                         <select id="type">
                             <option value="invoice">Invoice</option>
                             <option value="payment">Payment</option>
                         </select>
+                    </div>
+                    <div class="field right">
+                        <label>Amount:</label>
+                        <input type="number" id="amount">
                     </div>
                     <div class="field">
                         <label>To / From:</label>
@@ -40,18 +43,12 @@
                         <label>Details:</label>
                         <input type="text" id="details">
                     </div>
-                    <div class="field">
-                        <label>Amount:</label>
-                        <input type="number" id="amount">
-                    </div>
                     <button>Add Item</button>
                 </form>
             </section>
             <section class="section2">
                 <ul class="itemList">
-                    <li>
-                        
-                    </li>
+                    
                 </ul>
             </section>
         </div>
